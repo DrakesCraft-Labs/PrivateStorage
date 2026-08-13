@@ -1,18 +1,17 @@
-package io.github.thebusybiscuit.privatestorage;
+package com.github.drakescraft_labs.privatestorage;
 
-import org.bstats.bukkit.Metrics;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import io.github.thebusybiscuit.privatestorage.storage.PrivateChests;
-import io.github.thebusybiscuit.privatestorage.storage.PublicChests;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerHead;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerSkin;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
+import com.github.drakescraft_labs.privatestorage.storage.PrivateChests;
+import com.github.drakescraft_labs.privatestorage.storage.PublicChests;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerHead;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerSkin;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
 
 public class PrivateStorage extends JavaPlugin implements SlimefunAddon {
 
@@ -20,8 +19,6 @@ public class PrivateStorage extends JavaPlugin implements SlimefunAddon {
     public void onEnable() {
         Config cfg = new Config(this);
 
-        // Setting up bStats
-        new Metrics(this, 4912);
 
         if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
             new GitHubBuildsUpdater(this, getFile(), "ybw0014/PrivateStorage-CN/master").start();
@@ -40,6 +37,6 @@ public class PrivateStorage extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/ybw0014/PrivateStorage-CN/issues";
+        return "https://github.com/DrakesCraft-Labs/PrivateStorage/issues";
     }
 }

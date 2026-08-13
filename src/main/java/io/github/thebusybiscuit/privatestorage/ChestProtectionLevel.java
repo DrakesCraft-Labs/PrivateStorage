@@ -1,4 +1,4 @@
-package io.github.thebusybiscuit.privatestorage;
+package com.github.drakescraft_labs.privatestorage;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
