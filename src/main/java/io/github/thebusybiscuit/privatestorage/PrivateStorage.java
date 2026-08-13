@@ -27,7 +27,7 @@ public class PrivateStorage extends JavaPlugin implements SlimefunAddon {
         // version que empiece por "DEV", y las nuestras no -- una coincidencia que se rompe el dia
         // que alguien toque la cadena de version. Se despliega por SFTP, como el resto.
 
-        ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "private_storage"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromBase64("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThlNTU0NGFmN2Y1NDg5Y2MyNzQ5MWNhNjhmYTkyMzg0YjhlYTVjZjIwYjVjODE5OGFkYjdiZmQxMmJjMmJjMiJ9fX0=")), "&7私人存储", "", "&a> 单击打开"));
+        ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "private_storage"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromBase64("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThlNTU0NGFmN2Y1NDg5Y2MyNzQ5MWNhNjhmYTkyMzg0YjhlYTVjZjIwYjVjODE5OGFkYjdiZmQxMmJjMmJjMiJ9fX0=")), "&7Almacenamiento privado", "", "&a> Clic para abrir"));
 
         new PublicChests(this, itemGroup);
         new PrivateChests(this, itemGroup);
