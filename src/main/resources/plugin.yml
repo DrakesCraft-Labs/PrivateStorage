@@ -1,0 +1,15 @@
+name: PrivateStorage
+version: ${project.version}
+authors: [TheBusyBiscuit, JackStar]
+website: https://github.com/TheBusyBiscuit/PrivateStorage
+
+api-version: '1.21'
+main: io.github.thebusybiscuit.privatestorage.PrivateStorage
+
+depend:
+- Slimefun
+
+permissions:
+  PrivateStorage.bypass:
+    description: Allows to open all Safes
+    default: false

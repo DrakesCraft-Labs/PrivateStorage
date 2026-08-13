@@ -1,0 +1,40 @@
+package com.github.drakescraft_labs.privatestorage;
+
+import org.bstats.bukkit.Metrics;
+import org.bukkit.NamespacedKey;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import com.github.drakescraft_labs.privatestorage.storage.PrivateChests;
+import com.github.drakescraft_labs.privatestorage.storage.PublicChests;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerHead;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerSkin;
+
+public class PrivateStorage extends JavaPlugin implements SlimefunAddon {
+
+    @Override
+    public void onEnable() {
+        Config cfg = new Config(this);
+
+        // Setting up bStats
+        new Metrics(this, 4912);
+
+        ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "private_storage"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromBase64("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThlNTU0NGFmN2Y1NDg5Y2MyNzQ5MWNhNjhmYTkyMzg0YjhlYTVjZjIwYjVjODE5OGFkYjdiZmQxMmJjMmJjMiJ9fX0=")), "&7almacenamiento privado", "", "&a> Haga clic para abrir"));
+
+        new PublicChests(this, itemGroup);
+        new PrivateChests(this, itemGroup);
+    }
+
+    @Override
+    public JavaPlugin getJavaPlugin() {
+        return this;
+    }
+
+    @Override
+    public String getBugTrackerURL() {
+        return "https://github.com/DrakesCraft-Labs/PrivateStorage/issues";
+    }
+}
