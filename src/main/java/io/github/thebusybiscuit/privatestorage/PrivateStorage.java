@@ -11,7 +11,6 @@ import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
 import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerHead;
 import com.github.drakescraft_labs.slimefun4.libraries.dough.skins.PlayerSkin;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
 
 public class PrivateStorage extends JavaPlugin implements SlimefunAddon {
 
@@ -20,9 +19,13 @@ public class PrivateStorage extends JavaPlugin implements SlimefunAddon {
         Config cfg = new Config(this);
 
 
-        if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
-            new GitHubBuildsUpdater(this, getFile(), "ybw0014/PrivateStorage-CN/master").start();
-        }
+        // Aqui iba el autoactualizador, que se traia el jar del repositorio de upstream.
+        //
+        // Se quita entero en vez de apagarlo por configuracion: este jar esta recompilado contra
+        // el Slimefun repaquetado del servidor, asi que bajarse el de upstream encima dejaria el
+        // addon sin cargar. Hasta ahora lo unico que lo frenaba era que su condicion exige una
+        // version que empiece por "DEV", y las nuestras no -- una coincidencia que se rompe el dia
+        // que alguien toque la cadena de version. Se despliega por SFTP, como el resto.
 
         ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "private_storage"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromBase64("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThlNTU0NGFmN2Y1NDg5Y2MyNzQ5MWNhNjhmYTkyMzg0YjhlYTVjZjIwYjVjODE5OGFkYjdiZmQxMmJjMmJjMiJ9fX0=")), "&7私人存储", "", "&a> 单击打开"));
 
