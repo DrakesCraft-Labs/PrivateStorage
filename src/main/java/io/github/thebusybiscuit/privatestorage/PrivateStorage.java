@@ -1,10 +1,10 @@
-package com.github.drakescraft_labs.privatestorage;
+package io.github.thebusybiscuit.privatestorage;
 
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.github.drakescraft_labs.privatestorage.storage.PrivateChests;
-import com.github.drakescraft_labs.privatestorage.storage.PublicChests;
+import io.github.thebusybiscuit.privatestorage.storage.PrivateChests;
+import io.github.thebusybiscuit.privatestorage.storage.PublicChests;
 import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
 import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
 import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;

@@ -1,12 +1,12 @@
-package com.github.drakescraft_labs.privatestorage.storage;
+package io.github.thebusybiscuit.privatestorage.storage;
 
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 
-import com.github.drakescraft_labs.privatestorage.ChestProtectionLevel;
-import com.github.drakescraft_labs.privatestorage.PrivateStorage;
-import com.github.drakescraft_labs.privatestorage.SlimefunChest;
+import io.github.thebusybiscuit.privatestorage.ChestProtectionLevel;
+import io.github.thebusybiscuit.privatestorage.PrivateStorage;
+import io.github.thebusybiscuit.privatestorage.SlimefunChest;
 import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
 import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
 import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;

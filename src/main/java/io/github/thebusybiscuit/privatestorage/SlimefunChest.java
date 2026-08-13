@@ -1,4 +1,4 @@
-package com.github.drakescraft_labs.privatestorage;
+package io.github.thebusybiscuit.privatestorage;
 
 import java.util.List;
 import java.util.Objects;
