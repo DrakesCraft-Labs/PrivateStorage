@@ -1,27 +1,43 @@
-<p align="center"><img src="docs/banner.svg" alt="PrivateStorage" width="100%"></p>
+<p align="center">
+  <img src="docs/banner.svg" width="100%" alt="PRIVATESTORAGE Animated Banner" />
+</p>
 
 # PrivateStorage
 
-Cofres privados para Slimefun, adaptado al ecosistema Slimefun de **DrakesCraft** (Paper/Purpur 1.21.11, Java 21).
+Addon de **Slimefun 4** que implementa sistemas de almacenamiento seguro mediante cajas fuertes privadas y cofres protegidos contra explosiones y accesos no autorizados. Portado, limpiado de artefactos chinos y mantenido por **DrakesCraft Labs** para Paper/Purpur 1.21.11 en Java 21.
 
-## Qué añade
+---
 
-Cofres de distintas maderas y materiales que sólo abre su dueño.
+## 🎯 Objetivo
 
-## Qué cambiamos
+Proporcionar a los jugadores contenedores de almacenamiento que respeten estrictamente la propiedad del usuario (incluso fuera de claims de protección convencionales) con resistencia garantizada a explosiones y manipulación indebida.
 
-Este repositorio **no es un fork**: es el código original integrado en el ecosistema de
-DrakesCraft (Paper/Purpur 1.21.11, Java 21). Los cambios comunes a todos nuestros ports son:
+---
 
-**Los paquetes de Slimefun.** El core de DrakesCraft está repaquetado, así que un addon de fuera
-no encuentra nada hasta que se remapean sus imports.
+## ⚡ Características Principales
 
-**La telemetría, fuera.** bStats abría una conexión a bstats.org cada pocos minutos con datos del
-servidor. Se quitaron las llamadas, los imports y la dependencia — no se sustituyó por un stub
-inerte, que dejaría el código en pie aparentando que hay telemetría.
+- **Cajas Fuertes Privadas (Safes)**:
+  - Solo pueden ser abiertas o rotas por el jugador que las colocó.
+  - Opciones de compartir acceso a compañeros de equipo o polis de forma segura.
+- **Cofres de Materiales Escalonados**:
+  - Variantes de madera, hierro, oro, diamante y netherite con capacidades de almacenamiento expandidas.
+- **Cofres Anti-Explosión**:
+  - Inmunes a dinamita, creepers, proyectiles del Wither y ataques de jefes.
+- **Traducción Depurada**:
+  - Textos completamente en español, sin caracteres residuales en chino.
 
-**Los autoactualizadores, desarmados.** Este jar está recompilado contra nuestro Slimefun; si se
-bajara el de upstream encima, dejaría de cargar. Las actualizaciones se despliegan por SFTP.
+---
 
-**El rastreador de fallos apunta aquí**, no al repositorio original: un fallo de esta versión
-casi nunca es un fallo de allí.
+## 🛠️ Entorno y Compatibilidad
+
+- **Servidor**: Paper / Purpur 1.21.11
+- **Java**: 21
+- **Dependencias**:
+  - `Slimefun4-Drake`
+
+---
+
+## 📜 Créditos y Origen
+
+- **Autor original**: `ybw0014`
+- **Adaptación y Mantenimiento 1.21.11**: **DrakesCraft Labs**
