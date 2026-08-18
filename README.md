@@ -4,6 +4,16 @@
 
 # PrivateStorage
 
+> ### 🏰 ¡Únete a la Comunidad Oficial de DrakesCraft!
+> 
+> * 🎮 **IP del Servidor**: `play.drakescraft.net` *(Java 1.21.11 & Bedrock)*
+> * 💬 **Discord Oficial**: [discord.gg/drakescraft](https://discord.gg/rR7FbfCt9Y)
+> * 🌐 **Web & Guía**: [drakescraft.net](https://drakescraft.net) — 🛒 **Tienda**: [tienda.drakescraft.net](https://tienda.drakescraft.net)
+> 
+> *¡Juega con este addon y más de 80 expansiones optimizadas en vivo en nuestra network de supervivencia técnica!*
+
+---
+
 Addon de **Slimefun 4** que implementa sistemas de almacenamiento seguro mediante cajas fuertes privadas y cofres protegidos contra explosiones y accesos no autorizados. Portado, limpiado de artefactos chinos y mantenido por **DrakesCraft Labs** para Paper/Purpur 1.21.11 en Java 21.
 
 ---
