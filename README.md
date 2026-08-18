@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/PrivateStorage/main/docs/banner.svg" width="100%" alt="PRIVATESTORAGE Animated Banner" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/PrivateStorage/main/banner.svg" width="100%" alt="PRIVATESTORAGE Animated Banner" />
 </p>
 
 # PrivateStorage
